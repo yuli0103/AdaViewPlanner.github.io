@@ -243,9 +243,9 @@
             <h1 class="title is-1 publication-title">AdaViewPlanner: Adapting Video Diffusion Models for Viewpoint Planning in 4D Scenes</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="#" target="_blank">Yu Li</a><sup>1*</sup>,</span>
+                <a href="#" target="_blank">Yu Li</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="#" target="_blank">Menghan Xia</a><sup>2*</sup>,</span>
+                <a href="#" target="_blank">Menghan Xia</a><sup>2</sup>,</span>
               <span class="author-block">
                 <a href="#" target="_blank">Gongye Liu</a><sup>3</sup>,</span>
               <span class="author-block">
@@ -272,9 +272,7 @@
                 <sup>4</sup>Zhejiang University &nbsp;&nbsp;
                 <sup>5</sup>Kling Team, Kuaishou Technology &nbsp;&nbsp;
                 <sup>6</sup>Wuhan University<br>
-                Conference name and year
               </span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution</small></span>
             </div>
 
             <div class="column has-text-centered">
@@ -289,7 +287,7 @@
                 </a>
               </span>
 
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
@@ -297,7 +295,7 @@
                 </span>
                 <span>Supplementary</span>
               </a>
-            </span>
+            </span> -->
 
             <span class="link-block">
               <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -305,11 +303,11 @@
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
-              <span>Code</span>
+              <span>Code(Coming Soon)</span>
             </a>
           </span>
 
-          <span class="link-block">
+          <!-- <span class="link-block">
             <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
             class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
@@ -317,7 +315,7 @@
             </span>
             <span>arXiv</span>
           </a>
-        </span>
+        </span> -->
       </div>
     </div>
   </div>
@@ -354,7 +352,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Recent Text-to-Video (T2V) models have demonstrated powerful capability in visual simulation of real-world geometry and physical laws, indicating its potential as implicit world models. Inspired by this, we explore the feasibility of leveraging the video generation prior for viewpoint planning from given 4D scenes, since videos internally accompany dynamic scenes with natural viewpoints. To this end, we propose a two-stage paradigm to adapt pre-trained T2V models for viewpoint prediction, in a compatible manner. First, we inject the 4D scene representation into the pre-trained T2V model via an adaptive learning branch, where the 4D scene is viewpoint-agnostic and the conditional generated video embeds the viewpoints visually. Then, we formulate viewpoint extraction as a hybrid-condition guided camera extrinsic denoising process. Specifically, a camera extrinsic diffusion branch is further introduced onto the pre-trained T2V model, by taking the generated video and 4D scene as input. Experimental results show the superiority of our proposed method over existing competitors, and ablation studies validate the effectiveness of our key technical designs. To some extent, this work proves the potential of video generation models toward 4D interaction in real world.
           </p>
         </div>
       </div>
@@ -362,6 +360,32 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- Method -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content">
+          <!-- Method figure will go here -->
+          <div class="method-figure">
+            <img src="static/images/overview_v2.pdf" alt="Method Overview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
+          </div>
+          
+          <!-- Method description text -->
+          <div class="method-description has-text-justified" style="margin-top: 2rem;">
+            <p>
+              <!-- TODO: Replace with your method description based on the figure -->
+              [Method description will be added here based on your figure]
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method -->
 
 
 <!-- Image carousel -->
