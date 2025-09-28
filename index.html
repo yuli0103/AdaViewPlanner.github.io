@@ -368,7 +368,14 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
         <div class="content">
-          <!-- Method figure will go here -->
+          <!-- Method introduction text -->
+          <div class="method-introduction has-text-justified" style="margin-bottom: 2rem;">
+            <p>
+              <!-- TODO: Add your method introduction text here -->
+            Training over vast amounts of film footage, video generation models can synthesize various dynamic scenes with rich cinematic skills. Based on this observation, we aim to leverage this capability by repurposing these models as virtual cinematographers to design professional camera trajectories for given 4D scenes. For simplicity, we explore and validate this concept by only considering moving human in 4D scenes, which serves as the major context of interest in applications. The overview of the model is depicted below.            </p>
+          </div>
+          
+          <!-- Method figure -->
           <div class="method-figure">
             <img src="static/images/overview_v2.jpg" alt="Method Overview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
           </div>
@@ -376,15 +383,16 @@
           <!-- Method description text -->
           <div class="method-description has-text-justified" style="margin-top: 2rem;">
             <p>
-              <!-- TODO: Replace with your method description based on the figure -->
-              (a) Stage~I model for motion-conditioned cinematic video generation: a pose encoder processes human motion data (\textit{M}) from 4D scenes and integrates it with video tokens via spatial motion attention to produce videos with cinematic camera movements. Camera parameters used for guidance are denoted as \textit{C}. (b) Stage~II model: three branches for video, camera, and human motion are combined in an MMDiT framework to extract camera pose.
+              (a) Stage I model for motion-conditioned cinematic video generation: a pose encoder processes human motion data M from 4D scenes and integrates it with video tokens via spatial motion attention to produce videos with cinematic camera movements. Camera parameters used for guidance are denoted as C. (b) Stage II model: three branches for video, camera, and human motion are combined in an MMDiT framework to extract camera pose.
             </p>
           </div>
+          
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <!-- End method -->
 
 
