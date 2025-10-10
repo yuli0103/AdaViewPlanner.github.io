@@ -749,5 +749,32 @@ a:focus {
   }
 }
 
+/* Scrolling Videos Section */
+.scrolling-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.video-wrapper {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.video-wrapper video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .scrolling-videos {
+    gap: 1.5rem;
+  }
+}
+
 
 
