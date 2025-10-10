@@ -343,6 +343,29 @@
 </section> --> 
 <!-- End teaser video -->
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <!-- Method introduction text -->
+          <div class="method-introduction has-text-justified" style="margin-bottom: 2rem;">
+            <p>
+                <strong>TL;DR:</strong> We propose <span style="font-weight: bold;">AdaViewPlanner</span>, a framework that adapts pre-trained text-to-video models for automatic viewpoint planning in 4D scenes. Given 4D content and text prompts describing the scene context and desired camera motion, our model can generate coordinate-aligned camera pose sequences along with corresponding video visualizations. Leveraging the priors of video generation models, AdaViewPlanner demonstrates strong capability in performing effective and coherent viewpoint planning within  4D environments.
+            </p>
+          </div>
+          
+          <!-- Method figure -->
+          <div class="method-figure">
+            <img src="static/images/fig1.png" alt="Method Overview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
 <!-- Demos Video Carousel Section -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -400,7 +423,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Comparsion with other methods</h2>
+        <h2 class="title is-3">Comparisons</h2>
         <div class="content">
           
           <!-- Method figure -->
@@ -411,7 +434,9 @@
           <!-- Method description text -->
           <div class="method-description has-text-justified" style="margin-top: 2rem;">
             <p>
-              Compared with other methods, our model generates smoother trajectories that better follow instructions, while also exhibiting a cinematographic style centered on human actions.
+              Compared with other methods(E.T. [1], DanceCam* [2]), our model generates smoother trajectories that better follow instructions, while also exhibiting a cinematographic style centered on human actions.
+              [1] Courant, Robin, et al. "ET the Exceptional Trajectories: Text-to-camera-trajectory generation with character awareness." European Conference on Computer Vision. Cham: Springer Nature Switzerland, 2024.
+              [2] Wang, Zixuan, et al. "Dancecamera3d: 3d camera movement synthesis with music and dance." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2024.
             </p>
           </div>
           
@@ -462,8 +487,7 @@
           <!-- Method description text -->
           <div class="method-description has-text-justified" style="margin-top: 2rem;">
             <p>
-              Columns 1–4 illustrate the reprojection of 4D human skeletons using the estimated camera parameters, while Column 5 displays the corresponding rendered results in 3D space. To further analyze the influence of motion conditioning, we present two ablation variants. <span style="font-style: italic;">w/o Motion</span> refers to the removal of the motion condition in Stage II, which leads to a degradation in performance (Figure&nbsp;5.2). Without skeletal references, the model generates smooth but misfocused trajectories, resulting in erroneous viewpoints. In contrast, <span style="font-style: italic;">Relative Cam</span> denotes a variant trained without motion conditioning that estimates only relative camera poses, requiring post-processing to align camera and human motion coordinates. While this approach alleviates the viewpoint misalignment, it lacks motion scale awareness, ultimately causing noticeable temporal and spatial inconsistencies.
-              </p>
+              Columns 1–4 illustrate the reprojection of 4D human skeletons using the estimated camera parameters, while Column 5 displays the corresponding rendered results in 3D space. We present two ablation variants. <span style="font-style: italic;">w/o Motion</span> refers to the removal of the motion condition in Stage II. Without skeletal references, the model generates smooth but misfocused trajectories, resulting in erroneous viewpoints.  <span style="font-style: italic;">Relative Cam</span> denotes a variant trained without motion conditioning that estimates only relative camera poses, requiring post-processing to align camera and human motion coordinates. While this approach alleviates the viewpoint misalignment, it lacks motion scale awareness, ultimately causing noticeable temporal and spatial inconsistencies.              </p>
 
           </div>
           
