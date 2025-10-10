@@ -343,74 +343,136 @@
 </section> --> 
 <!-- End teaser video -->
 
-<!-- Scrolling Video Carousel Section -->
+<!-- Demos Video Carousel Section -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container is-max-desktop"> <!-- 添加 is-max-desktop 类来限制容器宽度 -->
-    <div class="container">
-      <h2 class="title is-3">Results Showcase</h2>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Demos</h2>
       <div id="results-video-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="showcase-video1" controls muted loop height="100%" preload="metadata">
-            <!-- TODO: 替换为你的视频文件路径 -->
             <source src="static/videos/1.mp4" type="video/mp4">
           </video>
-
         </div>
         
         <div class="item item-video2">
           <video poster="" id="showcase-video2" controls muted loop height="100%" preload="metadata">
-            <!-- TODO: 替换为你的视频文件路径 -->
             <source src="static/videos/2.mp4" type="video/mp4">
           </video>
-
         </div>
         
         <div class="item item-video3">
           <video poster="" id="showcase-video3" controls muted loop height="100%" preload="metadata">
-            <!-- TODO: 替换为你的视频文件路径 -->
             <source src="static/videos/3.mp4" type="video/mp4">
           </video>
-
         </div>
         
         <div class="item item-video4">
           <video poster="" id="showcase-video4" controls muted loop height="100%" preload="metadata">
-            <!-- TODO: 替换为你的视频文件路径 -->
             <source src="static/videos/4.mp4" type="video/mp4">
           </video>
-
         </div>
-        <div class="item item-video4">
-          <video poster="" id="showcase-video4" controls muted loop height="100%" preload="metadata">
-            <!-- TODO: 替换为你的视频文件路径 -->
+
+        <div class="item item-video5">
+          <video poster="" id="showcase-video5" controls muted loop height="100%" preload="metadata">
             <source src="static/videos/5.mp4" type="video/mp4">
           </video>
-
         </div>
-        <div class="item item-video4">
-          <video poster="" id="showcase-video4" controls muted loop height="100%" preload="metadata">
-            <!-- TODO: 替换为你的视频文件路径 -->
+
+        <div class="item item-video6">
+          <video poster="" id="showcase-video6" controls muted loop height="100%" preload="metadata">
             <source src="static/videos/6.mp4" type="video/mp4">
           </video>
-
         </div>
-        <div class="item item-video4">
-          <video poster="" id="showcase-video4" controls muted loop height="100%" preload="metadata">
-            <!-- TODO: 替换为你的视频文件路径 -->
+
+        <div class="item item-video7">
+          <video poster="" id="showcase-video7" controls muted loop height="100%" preload="metadata">
             <source src="static/videos/7.mp4" type="video/mp4">
           </video>
-
         </div>
       </div>
     </div>
+  </div>
+</section>
+<!-- End Demos Video Carousel Section -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Comparsion with other methods</h2>
+        <div class="content">
+          
+          <!-- Method figure -->
+          <div class="method-figure">
+            <img src="static/images/fig5_1.png" alt="Method Overview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
+          </div>
+          
+          <!-- Method description text -->
+          <div class="method-description has-text-justified" style="margin-top: 2rem;">
+            <p>
+              Compared with other methods, our model generates smoother trajectories that better follow instructions, while also exhibiting a cinematographic style centered on human actions.
+            </p>
+          </div>
+          
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- End Scrolling Video Carousel Section -->
 
 
-    
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">More visualization results of AdaViewPlanner</h2>
+        <div class="content">
+          
+          <!-- Method figure -->
+          <div class="method-figure">
+            <img src="static/images/vis_2.png" alt="Method Overview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
+          </div>
+          
+          <!-- Method description text -->
+          <div class="method-description has-text-justified" style="margin-top: 2rem;">
+            <p>
+              The results demonstrate the diversity of the generated trajectories and the model’s ability to follow camera text instructions.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Ablation results</h2>
+        <div class="content">
+          
+          <!-- Method figure -->
+          <div class="method-figure">
+            <img src="static/images/fig5_2.png" alt="Method Overview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
+          </div>
+          
+          <!-- Method description text -->
+          <div class="method-description has-text-justified" style="margin-top: 2rem;">
+            <p>
+              Columns 1–4 illustrate the reprojection of 4D human skeletons using the estimated camera parameters, while Column 5 displays the corresponding rendered results in 3D space. To further analyze the influence of motion conditioning, we present two ablation variants. <span style="font-style: italic;">w/o Motion</span> refers to the removal of the motion condition in Stage II, which leads to a degradation in performance (Figure&nbsp;5.2). Without skeletal references, the model generates smooth but misfocused trajectories, resulting in erroneous viewpoints. In contrast, <span style="font-style: italic;">Relative Cam</span> denotes a variant trained without motion conditioning that estimates only relative camera poses, requiring post-processing to align camera and human motion coordinates. While this approach alleviates the viewpoint misalignment, it lacks motion scale awareness, ultimately causing noticeable temporal and spatial inconsistencies.
+              </p>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -529,36 +591,30 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
